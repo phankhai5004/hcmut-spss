@@ -8,6 +8,8 @@ import PrintPage from './pages/PrintPage.jsx';
 import HistoryPage from './pages/HistoryPage.jsx';
 import PrinterListPage from './pages/PrinterListPage.jsx';
 import NotificationPage from './pages/NotificationPage.jsx';
+import TestPage from './pages/TestPage.jsx';
+import LoginForm from './components/LoginForm.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +17,7 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       {
-        path: '/', // Default route
+        index: true, // Default route
         element: <DashboardPage />, // Example root content
       },
       {
@@ -34,7 +36,15 @@ const router = createBrowserRouter([
         path: '/notification',
         element: <NotificationPage />,
       },
+      {
+        path: '/test',
+        element: <TestPage />,
+      },
     ],
+  },
+  {
+    path: '/login',
+    element: <LoginForm />,
   },
 ]);
 
