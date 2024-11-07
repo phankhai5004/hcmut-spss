@@ -1,9 +1,9 @@
 import { useLocation } from 'react-router-dom';
-import { PageName } from '../../constants/PageName';
+import { PageName } from '../../constants/PageName.ts';
 
 export default function Topbar() {
-  let location = useLocation();
-  let currentPageName = PageName[location.pathname];
+  const location = useLocation();
+  const currentPageName = PageName[location.pathname];
 
   return (
     <header className="flex flex-col gap-6">
