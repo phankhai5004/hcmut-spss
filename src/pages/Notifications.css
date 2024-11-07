@@ -1,0 +1,80 @@
+.notifications-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px; /* Thêm khoảng cách xung quanh container */
+  background-color: #f0f8ff;
+  height: 100vh;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.notifications-header {
+  /* background-color: ; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; /* Căn chỉnh khoảng cách bên trong header */
+  border-bottom: 1px solid #d1e3ff;
+  background-color: #ffffff;
+}
+
+.notifications-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.user-greeting {
+  color: #555;
+}
+
+.notifications-list {
+  margin-top: 28px;
+}
+
+.notification-item {
+  padding: 12px;
+  border: 1px solid #d1e3ff;
+  border-radius: 15px; /* Bo góc cho hộp */
+  margin-bottom: 28px; /* Khoảng cách giữa các thông báo */
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng */
+  transition: transform 0.2s; /* Hiệu ứng khi hover */
+  border-color: grey;
+}
+
+.notification-item:hover {
+  transform: translateY(-5px); /* Nổi lên khi hover */
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.notification-title {
+  font-weight: bold;
+  /* color: #1e3a8a; */
+}
+
+.notification-title-error {
+  font-weight: bold;
+  color: #93000a;
+}
+
+.notification-time {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.notification-content {
+  color: #555;
+  font-size: 0.95em;
+}
+
+.notification-content1 {
+  color: #555;
+  font-size: 0.95em;
+  margin-top: 15px;
+}
