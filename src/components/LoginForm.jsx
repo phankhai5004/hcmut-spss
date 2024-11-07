@@ -25,7 +25,7 @@ function LoginForm() {
                 placeholder="Tài khoản"
               />
             </div>
-            <div className="input-group">
+            <div className="mb-[15px] w-full">
               <label htmlFor="password" className="mb-[5px] block text-[12px] text-[#555]">
                 Mật khẩu
               </label>
