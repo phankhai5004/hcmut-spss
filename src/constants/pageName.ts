@@ -2,7 +2,7 @@ type PageNameMap = {
   [key: string]: string;
 };
 
-export const PageName: PageNameMap = {
+export const pageName: PageNameMap = {
   '/': 'Bảng điều khiển',
   '/print': 'In tài liệu',
   '/history': 'Lịch sử',
