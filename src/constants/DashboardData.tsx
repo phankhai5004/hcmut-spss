@@ -1,5 +1,5 @@
 import BalanceIcon from '../assets/coin2.svg?react';
-import PrintedIcon from '../assets/group.svg?react';
+import PrintedIcon from '../assets/Group.svg?react';
 import PaperIcon from '../assets/paper2.svg?react';
 import LoginIcon from '../assets/enter1.svg?react';
 import { SVGProps } from 'react';
