@@ -1,7 +1,17 @@
-export default function PrintPage() {
+import PagePrintDoc from '../components/PagePrint/PagePrint_doc';
+import UploadDoc from '../components/PagePrint/PagePrint_1';
+
+
+const PrintPage_1 = () => {
   return (
     <div>
-      <h1>PRINTPAGE PAGE</h1>
+      <div>
+        <PagePrintDoc />
+      </div>
+      <div>
+        <UploadDoc />
+      </div>
     </div>
   );
-}
+};
+export default PrintPage_1;
