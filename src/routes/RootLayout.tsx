@@ -43,9 +43,9 @@ function RoutingButton({ text, to, icon: Icon }: RoutingButtonProps): ReactEleme
 
 export default function RootLayout(): ReactElement {
   return (
-    <div className="flex h-lvh gap-5 p-3">
+    <div className="flex h-fit gap-5 p-3">
       {/*SIDE BAR*/}
-      <div className="h-full w-[260px] rounded-xl bg-[#F5F2FA] px-4">
+      <div className="sticky top-4 h-svh w-[260px] rounded-xl bg-[#F5F2FA] px-4">
         <div className="p-4">
           <BKPrint />
         </div>
