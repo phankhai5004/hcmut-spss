@@ -1,0 +1,4 @@
+#################
+I use bootstrap to design layout so pls install bootstrap before running
+npm install bootstrap@5.3.3
+pls also check vite-plugin too
