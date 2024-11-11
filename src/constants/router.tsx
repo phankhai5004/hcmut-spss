@@ -5,6 +5,7 @@ import PrintPage from '../pages/PrintPage';
 import HistoryPage from '../pages/HitoryPage';
 import PrinterListPage from '../pages/PrinterListPage';
 import NotificationPage from '../pages/NotificationPage';
+import LoginPage from '../pages/LoginPage';
 
 export const router = createBrowserRouter([
   {
@@ -33,5 +34,9 @@ export const router = createBrowserRouter([
         element: <NotificationPage />,
       },
     ],
+  },
+  {
+    path: '/login',
+    element: <LoginPage />,
   },
 ]);

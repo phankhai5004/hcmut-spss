@@ -7,14 +7,14 @@ import DashboardDatas from '../components/DashboardDatas/DashboardDatas.tsx';
 
 export default function DashboardPage() {
   return (
-    <div className="flex flex-col gap-5 pb-8 pt-5">
+    <div className="flex flex-col gap-10 pt-5">
       <div className="flex flex-col gap-10">
         <DashboardDatas />
         {/* CHART */}
         <LoginFrequencyChart />
       </div>
 
-      <div className="flex flex-col gap-5 pt-10">
+      <div className="flex flex-col gap-5">
         <div className="flex justify-between">
           <h1 className="text-[26px] font-medium">Lịch sử in gần đây</h1>
           <button className="rounded-xl bg-[#525A92] px-6 text-white">

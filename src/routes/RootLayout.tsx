@@ -43,7 +43,7 @@ function RoutingButton({ text, to, icon: Icon }: RoutingButtonProps): ReactEleme
 
 export default function RootLayout(): ReactElement {
   return (
-    <div className="flex h-fit gap-5 p-3">
+    <div className="flex h-fit min-h-dvh gap-5 p-3">
       {/*SIDE BAR*/}
       <div className="sticky top-4 h-svh w-[260px] rounded-xl bg-[#F5F2FA] px-4">
         <div className="p-4">
@@ -75,7 +75,7 @@ export default function RootLayout(): ReactElement {
           </div>
         </div>
       </div>
-      <div className="h-full w-full rounded-xl px-4 py-8">
+      <div className="h-fit w-full rounded-xl px-4 py-8">
         <Topbar />
         <Outlet />
       </div>
