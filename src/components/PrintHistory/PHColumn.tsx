@@ -21,7 +21,7 @@ export const PHColumns: ColumnDef<PHColumnType>[] = [
     header: () => <p className="text-left text-xs">Trạng thái</p>,
     cell: (info) => {
       const value = info.getValue() as string;
-      return <StatusChip success={value === 'success'} />;
+      return <StatusChip success={value === 'success'} successText="Hoàn thành" failText="Thất bại" />;
     },
     size: 240,
   },

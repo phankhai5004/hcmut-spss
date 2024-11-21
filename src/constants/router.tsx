@@ -5,11 +5,16 @@ import PrintPage from '../pages/PrintPage';
 import HistoryPage from '../pages/HitoryPage';
 import PrinterListPage from '../pages/PrinterListPage';
 import NotificationPage from '../pages/NotificationPage';
+import LoginPage from '../pages/LoginPage';
+import DragAndDrop from '../components/DragAndDrop/DragAndDrop';
+import SelectProperties from '../components/SelectProperties/SelectProperties';
+import SelectPrinters from '../components/SelectPrinters/SelectPrinters';
+import Confirm from '../components/Confirm/Confirm';
+import SuccessPrint from '../components/SuccessPrint/SuccessPrint';
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    // element: <RootLayout />,
     element: <RootLayout />,
     children: [
       {
@@ -19,6 +24,28 @@ export const router = createBrowserRouter([
       {
         path: 'print', // Relative path (no leading slash)
         element: <PrintPage />,
+        children: [
+          {
+            index: true,
+            element: <DragAndDrop />,
+          },
+          {
+            path: 'select-properties',
+            element: <SelectProperties />,
+          },
+          {
+            path: 'select-printers',
+            element: <SelectPrinters />,
+          },
+          {
+            path: 'confirm',
+            element: <Confirm />,
+          },
+          {
+            path: 'success',
+            element: <SuccessPrint />,
+          },
+        ],
       },
       {
         path: 'history', // Relative path (no leading slash)
@@ -33,5 +60,9 @@ export const router = createBrowserRouter([
         element: <NotificationPage />,
       },
     ],
+  },
+  {
+    path: '/login',
+    element: <LoginPage />,
   },
 ]);
