@@ -1,8 +1,10 @@
 // LoginForm.tsx
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import BKPrint from '../assets/BKPrint.svg?react';
 
 export default function LoginPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="flex h-full w-full truncate bg-white p-[12px]">
       <div className="flex w-[30%] flex-col justify-start p-[30px]">
@@ -43,9 +45,10 @@ export default function LoginPage() {
             </div>
             <button
               className="w-full cursor-pointer rounded-[5px] bg-[#1A2E98] p-[10px] text-[16px] text-[#fff] hover:bg-[#1669c1]"
+              onClick={() => navigate('/')}
               type="submit"
             >
-              <Link to="/">Đăng nhập</Link>
+              Đăng nhập
             </button>
           </form>
         </div>

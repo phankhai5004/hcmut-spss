@@ -11,11 +11,13 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^4.1.4",
     "@tanstack/react-table": "^8.20.5",
     "lucide-react": "^0.456.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
+    "react-toastify": "^10.0.6",
     "recharts": "^2.13.3"
   },
   "devDependencies": {
