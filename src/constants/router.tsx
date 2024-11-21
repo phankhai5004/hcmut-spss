@@ -15,7 +15,6 @@ import SuccessPrint from '../components/SuccessPrint/SuccessPrint';
 export const router = createBrowserRouter([
   {
     path: '/',
-    // element: <RootLayout />,
     element: <RootLayout />,
     children: [
       {

@@ -12,7 +12,9 @@ export default function Topbar() {
         <h1 className="text-[32px] font-semibold">{currentPageName}</h1>
         <div className="flex items-center gap-4">
           <h1 className="text-[22px]">Xin chào, Tuan Anh</h1>
-          <div className="size-10 rounded-full bg-blue-500" />
+          <div className="size-10 rounded-full">
+            <img src="https://xsgames.co/randomusers/assets/images/favicon.png" />
+          </div>
         </div>
       </div>
 
