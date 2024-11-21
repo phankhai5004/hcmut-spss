@@ -75,7 +75,7 @@ export default function RootLayout(): ReactElement {
           </div>
         </div>
       </div>
-      <div className="h-fit w-full rounded-xl px-4 py-8">
+      <div className="h-fit min-h-screen w-full rounded-xl px-4 py-8">
         <Topbar />
         <Outlet />
       </div>
