@@ -11,7 +11,7 @@ export default function DragAndDrop() {
     const file = event.target.files?.[0]; // Get the first selected file
     if (file) {
       setSelectedFile(file); // Optional: Store the file in state
-      navigate('/print/select-properties'); // Navigate to the desired path
+      navigate('/user/print/select-properties'); // Navigate to the desired path
     }
   };
   return (

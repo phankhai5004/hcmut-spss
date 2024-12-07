@@ -3,9 +3,14 @@ type PageNameMap = {
 };
 
 export const pageName: PageNameMap = {
-  '/': 'Bảng điều khiển',
-  '/print': 'In tài liệu',
-  '/history': 'Lịch sử',
-  '/printer-list': 'Danh sách máy in',
-  '/notification': 'Thông báo',
+  '/user': 'Bảng điều khiển',
+  '/user/print': 'In tài liệu',
+  '/user/history': 'Lịch sử',
+  '/user/printer-list': 'Danh sách máy in',
+  '/user/notification': 'Thông báo',
+  '/admin': 'Bảng điều khiển',
+  '/admin/print': 'In tài liệu',
+  '/admin/history': 'Lịch sử',
+  '/admin/printer-list': 'Danh sách máy in',
+  '/admin/notification': 'Thông báo',
 };
