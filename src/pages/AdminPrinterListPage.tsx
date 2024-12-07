@@ -3,10 +3,10 @@ import PrintedPapers from '../assets/PrintedPapers.svg?react';
 import PaperIcon from '../assets/PaperIcon.svg?react';
 import PrinterFilter from '../components/PrinterFilter/PrinterFilter';
 import Table from '../components/Table/Table';
-import { PrinterListColumns } from '../components/PrinterList/PrinterListColumn';
+import { AdminPrinterListColumns } from '../components/PrinterList/PrinterListColumn';
 import { printerListData } from '../constants/printerList';
 
-export default function PrinterListPage() {
+export default function AdminPrinterListPage() {
   return (
     <div className="flex w-full flex-col gap-10 pt-5">
       {/* Summary Cards */}
@@ -25,10 +25,10 @@ export default function PrinterListPage() {
         </div>
 
         <div className="relative border-r border-[#C7C5D0] px-8 py-4">
-          <div className="text-sm font-medium">Tổng số lượng máy in</div>
+          <div className="text-sm font-medium">Số lượng máy in khả dụng</div>
 
           <div className="relative flex h-full">
-            <p className="text-[32px] font-medium">80</p>
+            <p className="text-[32px] font-medium">40</p>
             <p className="mt-2 text-[12px] font-medium">Máy</p>
           </div>
 
@@ -38,10 +38,10 @@ export default function PrinterListPage() {
         </div>
 
         <div className="relative border-r border-[#C7C5D0] px-8 py-4">
-          <div className="text-sm font-medium">Tổng số lượng máy in</div>
+          <div className="text-sm font-medium">Số lượng máy in đang sữa chữa</div>
 
           <div className="relative flex h-full">
-            <p className="text-[32px] font-medium">80</p>
+            <p className="text-[32px] font-medium">40</p>
             <p className="mt-2 text-[12px] font-medium">Máy</p>
           </div>
 
@@ -54,7 +54,7 @@ export default function PrinterListPage() {
       {/* Search & Filters */}
       <PrinterFilter />
 
-      <Table hidePSS={false} columns={PrinterListColumns} data={printerListData} />
+      <Table hidePSS={false} columns={AdminPrinterListColumns} data={printerListData} />
     </div>
   );
 }

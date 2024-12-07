@@ -4,7 +4,7 @@ import { printHistoryData } from '../constants/printHistoryData';
 import { PHColumns } from '../components/PrintHistory/PHColumn';
 import HistoryFilter from '../components/HistoryFilter/HistoryFilter';
 
-export default function HistoryPage() {
+export default function UserHistoryPage() {
   return (
     <div className="flex flex-col gap-10 pt-5">
       <DashboardDatas />

@@ -39,15 +39,6 @@ export const notifications: Notification[] = [
   },
   {
     id: 4,
-    title: '[THÔNG BÁO] ĐĂNG KÝ KHÓA HỌC THÀNH CÔNG',
-    time: '2:45PM',
-    success: true,
-    content:
-      'Chúc mừng! Bạn đã đăng ký thành công khóa học. Vui lòng kiểm tra email để xem thông tin chi tiết về lịch học.',
-    content2: 'Khóa học sẽ bắt đầu từ ngày 15/11/2024. Hãy chuẩn bị sẵn sàng cho hành trình học tập của bạn!',
-  },
-  {
-    id: 5,
     title: '[LỖI] KHÔNG THỂ KẾT NỐI MÁY CHỦ',
     time: '11:20AM',
     success: false,
@@ -55,7 +46,7 @@ export const notifications: Notification[] = [
     content2: 'Nếu vấn đề vẫn tiếp tục, hãy liên hệ với bộ phận kỹ thuật để được hỗ trợ. Hotline: 1900-xxxx',
   },
   {
-    id: 6,
+    id: 5,
     title: '[THÔNG TIN] THANH TOÁN THÀNH CÔNG',
     time: '4:50PM',
     success: true,
@@ -64,7 +55,7 @@ export const notifications: Notification[] = [
       'Hóa đơn điện tử sẽ được gửi đến email của bạn trong vòng 24 giờ tới. Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi.',
   },
   {
-    id: 7,
+    id: 6,
     title: '[CẢNH BÁO] ĐĂNG NHẬP BẤT THƯỜNG',
     time: '3:15AM',
     success: false,
@@ -73,7 +64,7 @@ export const notifications: Notification[] = [
     content2: 'Để bảo vệ tài khoản, chúng tôi khuyến nghị bạn thay đổi mật khẩu ngay lập tức và bật xác thực 2 lớp.',
   },
   {
-    id: 8,
+    id: 7,
     title: '[THÔNG BÁO] CẬP NHẬT THÔNG TIN CÁ NHÂN',
     time: '9:05AM',
     success: true,
@@ -82,7 +73,7 @@ export const notifications: Notification[] = [
       'Vui lòng kiểm tra lại thông tin đã cập nhật. Nếu có bất kỳ thay đổi nào, bạn có thể chỉnh sửa trong phần Cài đặt tài khoản.',
   },
   {
-    id: 9,
+    id: 8,
     title: '[LỖI] KHÔNG THỂ TẢI TỆP TIN',
     time: '1:30PM',
     success: false,
@@ -91,11 +82,41 @@ export const notifications: Notification[] = [
       'Nguyên nhân có thể do tệp tin không tồn tại hoặc đã bị xóa. Vui lòng thử lại sau hoặc liên hệ với admin để được hỗ trợ.',
   },
   {
-    id: 10,
+    id: 9,
     title: '[THÔNG BÁO] LỊCH HỌP MỚI',
     time: '5:25PM',
     success: true,
     content: 'Bạn có một cuộc họp mới được lên lịch vào ngày mai lúc 10:00AM.',
     content2: 'Chủ đề: Báo cáo quý III/2024. Địa điểm: Phòng họp 3A. Vui lòng xác nhận tham dự trong hệ thống.',
+  },
+];
+
+export const adminNotifications: Notification[] = [
+  {
+    id: 1,
+    title: '[THÔNG BÁO] LỊCH HỌP MỚI',
+    time: '5:25PM',
+    success: true,
+    content: 'Bạn có một cuộc họp mới được lên lịch vào ngày mai lúc 10:00AM.',
+    content2: 'Chủ đề: Báo cáo quý III/2024. Địa điểm: Phòng họp 3A. Vui lòng xác nhận tham dự trong hệ thống.',
+  },
+  {
+    id: 2,
+    title: '[CẢNH BÁO] MÁY IN ĐANG BẢO TRÌ',
+    time: '2:00PM',
+    success: false,
+    content: 'Máy in của bạn đang trong quá trình bảo trì. Vui lòng chờ cho đến khi quá trình bảo trì hoàn tất.',
+    content2:
+      'Nếu bạn cần trợ giúp ngay lập tức, vui lòng liên hệ với bộ phận kỹ thuật hoặc chờ thông báo hoàn thành bảo trì.',
+  },
+  {
+    id: 3, // New ID for the printer back online notification
+    title: '[THÔNG TIN] MÁY IN ĐÃ HOẠT ĐỘNG TRỞ LẠI',
+    time: '1:15PM', // Adjust time as needed
+    success: true, // Indicating that the action was successful
+    content:
+      'Máy in của bạn đã hoàn tất bảo trì và hoạt động trở lại bình thường. Bạn có thể sử dụng máy in ngay bây giờ.',
+    content2:
+      'Chúng tôi cảm ơn sự kiên nhẫn của bạn trong suốt quá trình bảo trì. Nếu có vấn đề nào, vui lòng liên hệ với bộ phận kỹ thuật để được hỗ trợ.',
   },
 ];

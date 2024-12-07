@@ -5,22 +5,22 @@ export default function NextProgressButton() {
   const location = useLocation();
 
   const handleOnClickNext = () => {
-    if (location.pathname === '/dashboard/print/select-properties') {
-      navigate('/dashboard/print/select-printers');
-    } else if (location.pathname === '/dashboard/print/select-printers') {
-      navigate('/dashboard/print/confirm');
-    } else if (location.pathname === '/dashboard/print/confirm') {
-      navigate('/dashboard/print/success');
+    if (location.pathname === '/user/print/select-properties') {
+      navigate('/user/print/select-printers');
+    } else if (location.pathname === '/user/print/select-printers') {
+      navigate('/user/print/confirm');
+    } else if (location.pathname === '/user/print/confirm') {
+      navigate('/user/print/success');
     }
   };
 
   const handleOnClickPrev = () => {
-    if (location.pathname === '/dashboard/print/confirm') {
-      navigate('/dashboard/print/select-printers');
-    } else if (location.pathname === '/dashboard/print/select-printers') {
-      navigate('/dashboard/print/select-properties');
-    } else if (location.pathname === '/dashboard/print/select-properties') {
-      navigate('/dashboard/print');
+    if (location.pathname === '/user/print/confirm') {
+      navigate('/user/print/select-printers');
+    } else if (location.pathname === '/user/print/select-printers') {
+      navigate('/user/print/select-properties');
+    } else if (location.pathname === '/user/print/select-properties') {
+      navigate('/user/print');
     }
   };
 

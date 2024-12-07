@@ -1,10 +1,10 @@
-import { notifications } from '../constants/notifications';
+import { adminNotifications } from '../constants/notifications';
 
-export default function NotificationPage() {
+export default function AdminNotificationPage() {
   return (
     <div className="w-full bg-white pt-10">
       <div className="flex flex-col gap-7">
-        {notifications.map((notification) => (
+        {adminNotifications.map((notification) => (
           <div key={notification.id} className="rounded-lg border border-gray-300 bg-white p-4 shadow-lg">
             <div className="mb-3 flex justify-between">
               <span className={`font-bold ${notification.success ? 'text-blue-900' : 'text-red-700'}`}>

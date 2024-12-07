@@ -1,7 +1,7 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, LabelList, ResponsiveContainer } from 'recharts';
-import { LoginStats } from '../../constants/LoginFrequencyStats';
+import { AdminLoginStats } from '../../constants/LoginFrequencyStats';
 
-export default function LoginFrequencyChart() {
+export default function AdminLoginFrequencyChart() {
   return (
     <div
       style={{
@@ -26,11 +26,11 @@ export default function LoginFrequencyChart() {
           marginBottom: '20px',
         }}
       >
-        Thống kê tần suất đăng nhập
+        Thống kê Lượng truy cập
       </h3>
 
       <ResponsiveContainer width="100%" height="80%">
-        <LineChart data={LoginStats} margin={{ top: 20, right: 30, left: 20, bottom: 10 }}>
+        <LineChart data={AdminLoginStats} margin={{ top: 20, right: 30, left: 20, bottom: 10 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
           <YAxis />
