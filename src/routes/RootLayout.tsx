@@ -13,12 +13,14 @@ type RoutingButtonProps = {
   text: string;
   to: string;
   icon: ElementType;
+  end: boolean;
 };
 
-function RoutingButton({ text, to, icon: Icon }: RoutingButtonProps): ReactElement {
+function RoutingButton({ text, to, icon: Icon, end }: RoutingButtonProps): ReactElement {
   return (
     <NavLink
       to={to}
+      end={end}
       className={({ isActive }) =>
         `group mt-3 flex h-10 w-full flex-col items-start justify-center gap-2 self-stretch rounded border-[1px] hover:border-[#000F5D] ${isActive ? 'border-[#000F5D]' : 'border-[#F5F2FA]'}`
       }
@@ -76,7 +78,7 @@ export default function RootLayout(): ReactElement {
         <div className="h-[1px] w-full bg-[#C7C5D0]" />
 
         <div className="pb-5 pt-2">
-          <RoutingButton text="Bảng điều khiển" icon={Dashboard} to="/" />
+          <RoutingButton text="Bảng điều khiển" icon={Dashboard} to="/dashboard" end={true} />
         </div>
 
         {/*DIVIDER*/}
@@ -84,16 +86,16 @@ export default function RootLayout(): ReactElement {
 
         <div className="mt-5">
           <p className="text-[14px] font-normal text-[#46464F]">Chức năng chính</p>
-          <RoutingButton text="In tài liệu" icon={Document} to="print" />
+          <RoutingButton text="In tài liệu" icon={Document} to="/dashboard/print" end={false} />
         </div>
 
         <div className="mt-5">
           <p className="text-[14px] font-normal text-[#46464F]">Thống kê</p>
 
           <div>
-            <RoutingButton text="Lịch sử" icon={Document} to="/history" />
-            <RoutingButton text="Danh sách máy in" icon={Printing} to="/printer-list" />
-            <RoutingButton text="Thông báo" icon={Notification} to="/notification" />
+            <RoutingButton text="Lịch sử" icon={Document} to="/dashboard/history" end={false} />
+            <RoutingButton text="Danh sách máy in" icon={Printing} to="/dashboard/printer-list" end={false} />
+            <RoutingButton text="Thông báo" icon={Notification} to="/dashboard/notification" end={false} />
           </div>
         </div>
       </div>

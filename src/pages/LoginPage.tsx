@@ -45,7 +45,7 @@ export default function LoginPage() {
             </div>
             <button
               className="w-full cursor-pointer rounded-[5px] bg-[#1A2E98] p-[10px] text-[16px] text-[#fff] hover:bg-[#1669c1]"
-              onClick={() => navigate('/')}
+              onClick={() => navigate('/dashboard')}
               type="submit"
             >
               Đăng nhập

@@ -18,7 +18,7 @@ export default function DashboardPage() {
         <div className="flex justify-between">
           <h1 className="text-[26px] font-medium">Lịch sử in gần đây</h1>
           <button className="rounded-xl bg-[#525A92] px-6 text-white">
-            <Link to="/history">Xem nhiều lịch sử in hơn</Link>
+            <Link to="/dashboard/history">Xem nhiều lịch sử in hơn</Link>
           </button>
         </div>
 

@@ -5,22 +5,22 @@ export default function NextProgressButton() {
   const location = useLocation();
 
   const handleOnClickNext = () => {
-    if (location.pathname === '/print/select-properties') {
-      navigate('/print/select-printers');
-    } else if (location.pathname === '/print/select-printers') {
-      navigate('/print/confirm');
-    } else if (location.pathname === '/print/confirm') {
-      navigate('/print/success');
+    if (location.pathname === '/dashboard/print/select-properties') {
+      navigate('/dashboard/print/select-printers');
+    } else if (location.pathname === '/dashboard/print/select-printers') {
+      navigate('/dashboard/print/confirm');
+    } else if (location.pathname === '/dashboard/print/confirm') {
+      navigate('/dashboard/print/success');
     }
   };
 
   const handleOnClickPrev = () => {
-    if (location.pathname === '/print/confirm') {
-      navigate('/print/select-printers');
-    } else if (location.pathname === '/print/select-printers') {
-      navigate('/print/select-properties');
-    } else if (location.pathname === '/print/select-properties') {
-      navigate('/print');
+    if (location.pathname === '/dashboard/print/confirm') {
+      navigate('/dashboard/print/select-printers');
+    } else if (location.pathname === '/dashboard/print/select-printers') {
+      navigate('/dashboard/print/select-properties');
+    } else if (location.pathname === '/dashboard/print/select-properties') {
+      navigate('/dashboard/print');
     }
   };
 
