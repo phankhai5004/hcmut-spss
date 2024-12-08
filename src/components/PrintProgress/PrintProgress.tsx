@@ -12,24 +12,28 @@ const progressButtons: ProgressButtonProps[] = [
   {
     state: 1,
     text: 'Đăng tải tài liệu',
-    path: '/print',
+    path: '/user/print',
   },
   {
     state: 2,
     text: 'Điều chỉnh',
-    path: '/print/select-properties',
+    path: '/user/print/select-properties',
   },
   {
     state: 3,
     text: 'Chọn máy in',
-    path: '/print/select-printers',
+    path: '/user/print/select-printers',
   },
   {
     state: 4,
     text: 'Xác nhận',
-    path: '/print/confirm',
+    path: '/user/print/confirm',
   },
-  { state: 5, text: 'sucess', path: '/print/success' },
+  {
+    state: 5,
+    text: 'sucess',
+    path: '/user/print/success',
+  },
 ];
 
 export default function PrintProgress() {
