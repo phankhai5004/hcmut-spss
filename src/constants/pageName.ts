@@ -13,4 +13,5 @@ export const pageName: PageNameMap = {
   '/admin/history': 'Lịch sử',
   '/admin/printer-list': 'Danh sách máy in',
   '/admin/notification': 'Thông báo',
+  '/admin/add-printer': 'Thêm máy in',
 };

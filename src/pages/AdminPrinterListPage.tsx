@@ -5,8 +5,11 @@ import PrinterFilter from '../components/PrinterFilter/PrinterFilter';
 import Table from '../components/Table/Table';
 import { AdminPrinterListColumns } from '../components/PrinterList/PrinterListColumn';
 import { printerListData } from '../constants/printerList';
+import { useNavigate } from 'react-router-dom';
 
 export default function AdminPrinterListPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="flex w-full flex-col gap-10 pt-5">
       {/* Summary Cards */}
@@ -54,6 +57,12 @@ export default function AdminPrinterListPage() {
       {/* Search & Filters */}
       <PrinterFilter />
 
+      <button
+        className="w-fit rounded-lg bg-[#525A92] px-4 py-2 text-white"
+        onClick={() => navigate('/admin/add-printer')}
+      >
+        + Thêm máy in
+      </button>
       <Table hidePSS={false} columns={AdminPrinterListColumns} data={printerListData} />
     </div>
   );

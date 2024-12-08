@@ -16,6 +16,7 @@ import AdminDashboardPage from '../pages/AdminDashboardPage';
 import AdminHistoryPage from '../pages/AdminHitoryPage';
 import AdminPrinterListPage from '../pages/AdminPrinterListPage';
 import AdminNotificationPage from '../pages/AdminNotificationPage';
+import AdminAddPrinterPage from '../pages/AdminAddPrinterPage';
 
 export const router = createBrowserRouter([
   {
@@ -87,6 +88,10 @@ export const router = createBrowserRouter([
       {
         path: 'printer-list',
         element: <AdminPrinterListPage />,
+      },
+      {
+        path: 'add-printer',
+        element: <AdminAddPrinterPage />,
       },
       {
         path: 'notification',
