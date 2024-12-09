@@ -4,7 +4,6 @@ import { adminPrintHistoryData } from '../constants/printHistoryData.ts';
 import { AdminPHColumns } from '../components/PrintHistory/PHColumn.tsx';
 import AdminDashboardDatas from '../components/DashboardDatas/AdminDashboardData.tsx';
 import AdminLoginFrequencyChart from '../components/LoginFrequencyChart/AdminLoginFrequencyChart.tsx';
-import ToggleSwitch from '../components/ToggleSwitch/ToggleSwitch.tsx';
 
 export default function AdminDashboardPage() {
   return (
@@ -26,8 +25,6 @@ export default function AdminDashboardPage() {
         {/* TABLE */}
         <Table data={adminPrintHistoryData} columns={AdminPHColumns} hidePSS={true} />
       </div>
-
-      <ToggleSwitch />
     </div>
   );
 }
