@@ -11,6 +11,10 @@ npm install
 npm run dev
 ```
 
+# Testing the web site
+
+To access to normal user view, you need to type in username **user** and password **user**. Or if you want to be an administrator you can try login with username admin and password admin.
+
 ## Directories and components naming convention
 
 - Utilize plulral form and all lowercase for directory names (e.g., assets, components, utils)
